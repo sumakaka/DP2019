@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css</title>
+	<meta charset="utf-8">
+	<style>
+        b{
+            color: orange;
+        }/* 요소 선택자 */
+
+        .c_name{
+            color: teal;
+        }/*클래스 선택자*/
+        #i_name{
+            color: turquoise;
+        }/*아이디 선택자*/
+
+        #i_name2:before{content:"★";}
+        #i_name2:after{content:"☆";}
+        #i_name2:first-letter{font-size:39px;}
+        #i_name2:first-line{color: yellowgreen;}
+
+        .con:first-child{
+                color:red;
+        }
+        .con:last-child{
+                color:gold;
+        }
+        .con:nth-child(5){
+                color:blue;
+        }
+
+    </style>
+</head>
+<body>
+        <a href="index.html">뒤로가기</a> <br>
+
+    <b>내용1</b>
+    <div class="c_name">클래스</div>
+    <div id="i_name">아이디<br><br><br></div>
+    <div id="i_name2">가상요소 선택자 가상요소 선택자 </div>
+
+    <ul>
+        <li class="con">내용1</li>
+        <li class="con">내용2</li>
+        <li class="con">내용3</li>
+        <li class="con">내용4</li>
+        <li class="con">내용5</li>
+        <li class="con">내용6</li>
+    </ul>
+
+    <style>
+        a:link{
+            color:black;
+            text-decoration: none;
+        }
+        a:visited{
+            color:purple;
+            text-decoration: none;
+        }
+        a:hover{
+            color:red;
+        }
+        a:active{
+            color:yellow;
+        }
+        a:focus{
+            color: pink;
+        }
+</style>
+    <a href="#">링크 버튼</a>
+
+    <style>
+        #boxmodel1{
+            background-color: #ddd;
+            width: 100px;
+            height: 250px;
+            margin: 50px;  /* 바깥여백 */
+            padding: 100px;/* 안쪽여백 */
+            border: solid 1px black;/* 경계 : 선종류, 두께, 선색깔 */
+
+        }
+    
+    </style>
+
+    <div id="boxmodel1">박스모델</div>
+    인라인태그
+
+    <style>
+        /* 하위요소 선택자 띄어쓰기 */
+        div li{
+            color:orchid;
+
+        }
+        /* 자식요소 선택자, > 부등호기호 */
+        div>ul>li{
+            text-decoration: underline;
+        }
+        /* 산택자 그룹화 ,쉼표*/
+        div, ul, li{
+            /* 16진수, 0~9~A~F~ */
+            color: violet;
+            /* 3자리 컬러코드 #rgb */
+            color: #000;
+            /* 6자리 컬러코드 #rrggbb */
+    
+        }
+    </style>
+
+<div>
+    <ul>
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+        <li>리스트4</li>
+    </ul>
+</div>
+
+
+    <style>
+    .position_test{
+        background-color: khaki;
+        /* static 정적인 (기본) */
+        position: static;
+        /* absolute 절대적인 */
+        /* top, left, right, bottom 위치 조종 가능 */
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        /* fixed 고정된 */
+        position: fixed;
+    }
+    </style>
+
+
+    <div class="position_test">
+        position_test
+    </div>
+
+
+    <style>
+        .font_test{
+            background-color: hotpink;
+            font-family: "Notosans" , "나눔고딕", Dotum, "굴림", Gulim, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            font-style: oblique;
+            font-variant: small-caps;
+            text-align: center; /* left, right, center / inline 요소에만 적용됨 */
+            height: 150px;
+            vertical-align: text-top;
+            text-decoration: underline;
+            
+        }
+    </style>
+
+    <div class="font_test">
+        ABCDEfghijklM
+        container
+        font_test
+        <img width="100px" src="images/oce.jpg">
+    </div>
+
+    <style>
+        .letter_line{
+            /* 글자사이의 간격 */
+            letter-spacing: 10px;
+            /* 줄 간격 */
+            line-height: 30px;
+            /* 들여쓰기 */
+            text-indent: 50px;
+
+
+        }
+    </style>
+
+    <div class="letter_line">
+        테일러 앨리슨 스위프트는 미국의 싱어송라이터이자 배우이다.
+2010년대 대표적인 월드스타 중 한명으로, 미국 10~20대 여성들에게 가히 절대적인 인기를 얻고 있으며 컨트리 음악으로 유명한 남부에서도 여전히 그 인기가 상상을 초월한다. 또한 앨범 판매량, 싱글, 투어, 그래미 및 평단 모든 부분에서 최상위권을 달리는, 굉장히 밸런스 있는 커리어를 지닌 가수 중 한 명이다. 특히 앨범 판매량과 투어에 있어서는 말 그대로 압도적이다. 미국에서 총판 100만 장만 넘겨도 성공했다는 소리를 듣는 시대에 1집부터 6집까지 400만 장 이하로 판 앨범이 없을 정도로 대단한 판매량을 자랑하고 있으며, 팝으로 전향한 이후부터는 약하다고 지적받았던 싱글 차트 부문에서도 좋은 성과를 보여주고 있다. 또한 2005년 데뷔때부터 2019년 지금까지 7장의 앨범 모두 성공적인 커리어를 유지하고 있다.
+
+
+    </div>
+
+    <style>
+     .text-transform{
+         text-transform: lowercase;
+     }
+    </style>
+    <div class="text-transform">
+        ABCDefghiJKLMN
+    </div>
+
+    <style>
+        .pre{
+            white-space: pre;
+        }
+    </style>
+
+    <div class="pre">
+        1 2     3     4 5 6
+        7   8 9
+    </div>
+    <style>
+       
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+        @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+			/* import url 들여오기 */
+            .google_font{
+				font-family: 'Mansalva', cursive;
+                /* import 후 불러온 폰트이름을 명시하여 사용함 */
+                font-size: 32px;
+			}
+    </style>
+    <div class="google_font">
+        google_font
+    </div>
+
+</body></body>
+</html>
